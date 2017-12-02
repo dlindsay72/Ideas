@@ -8,20 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		7B49E7161FD22CAC00268DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7151FD22CAC00268DF8 /* AppDelegate.swift */; };
-		7B49E7181FD22CAC00268DF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7171FD22CAC00268DF8 /* ViewController.swift */; };
+		7B49E7181FD22CAC00268DF8 /* IdeasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7171FD22CAC00268DF8 /* IdeasVC.swift */; };
 		7B49E71B1FD22CAC00268DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B49E7191FD22CAC00268DF8 /* Main.storyboard */; };
 		7B49E71D1FD22CAC00268DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B49E71C1FD22CAC00268DF8 /* Assets.xcassets */; };
 		7B49E7201FD22CAC00268DF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B49E71E1FD22CAC00268DF8 /* LaunchScreen.storyboard */; };
+		7B49E72A1FD22E5A00268DF8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B49E7291FD22E5A00268DF8 /* CloudKit.framework */; };
+		7B49E7301FD231A000268DF8 /* Idea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E72F1FD231A000268DF8 /* Idea.swift */; };
+		7B49E7321FD2321C00268DF8 /* CloudKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7311FD2321C00268DF8 /* CloudKitService.swift */; };
+		7B49E7341FD232EF00268DF8 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7331FD232EF00268DF8 /* AlertService.swift */; };
+		7B49E7361FD2332B00268DF8 /* IdeasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7351FD2332B00268DF8 /* IdeasService.swift */; };
+		7B49E7381FD2340900268DF8 /* UserNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B49E7371FD2340900268DF8 /* UserNotificationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7B49E7121FD22CAC00268DF8 /* Ideas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ideas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B49E7151FD22CAC00268DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B49E7171FD22CAC00268DF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B49E7171FD22CAC00268DF8 /* IdeasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasVC.swift; sourceTree = "<group>"; };
 		7B49E71A1FD22CAC00268DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B49E71C1FD22CAC00268DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B49E71F1FD22CAC00268DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B49E7211FD22CAC00268DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B49E7271FD22E5700268DF8 /* Ideas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ideas.entitlements; sourceTree = "<group>"; };
+		7B49E7291FD22E5A00268DF8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		7B49E72F1FD231A000268DF8 /* Idea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Idea.swift; sourceTree = "<group>"; };
+		7B49E7311FD2321C00268DF8 /* CloudKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitService.swift; sourceTree = "<group>"; };
+		7B49E7331FD232EF00268DF8 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		7B49E7351FD2332B00268DF8 /* IdeasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeasService.swift; sourceTree = "<group>"; };
+		7B49E7371FD2340900268DF8 /* UserNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B49E72A1FD22E5A00268DF8 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +54,7 @@
 			children = (
 				7B49E7141FD22CAC00268DF8 /* Ideas */,
 				7B49E7131FD22CAC00268DF8 /* Products */,
+				7B49E7281FD22E5A00268DF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,60 @@
 		7B49E7141FD22CAC00268DF8 /* Ideas */ = {
 			isa = PBXGroup;
 			children = (
-				7B49E7151FD22CAC00268DF8 /* AppDelegate.swift */,
-				7B49E7171FD22CAC00268DF8 /* ViewController.swift */,
-				7B49E7191FD22CAC00268DF8 /* Main.storyboard */,
-				7B49E71C1FD22CAC00268DF8 /* Assets.xcassets */,
-				7B49E71E1FD22CAC00268DF8 /* LaunchScreen.storyboard */,
+				7B49E72E1FD22ECE00268DF8 /* Services */,
+				7B49E72D1FD22EC700268DF8 /* Model */,
+				7B49E72C1FD22EC200268DF8 /* View */,
+				7B49E72B1FD22EBC00268DF8 /* Controller */,
+				7B49E7271FD22E5700268DF8 /* Ideas.entitlements */,
 				7B49E7211FD22CAC00268DF8 /* Info.plist */,
 			);
 			path = Ideas;
+			sourceTree = "<group>";
+		};
+		7B49E7281FD22E5A00268DF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B49E7291FD22E5A00268DF8 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B49E72B1FD22EBC00268DF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B49E7151FD22CAC00268DF8 /* AppDelegate.swift */,
+				7B49E7171FD22CAC00268DF8 /* IdeasVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B49E72C1FD22EC200268DF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B49E71C1FD22CAC00268DF8 /* Assets.xcassets */,
+				7B49E7191FD22CAC00268DF8 /* Main.storyboard */,
+				7B49E71E1FD22CAC00268DF8 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B49E72D1FD22EC700268DF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B49E72F1FD231A000268DF8 /* Idea.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B49E72E1FD22ECE00268DF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B49E7311FD2321C00268DF8 /* CloudKitService.swift */,
+				7B49E7331FD232EF00268DF8 /* AlertService.swift */,
+				7B49E7351FD2332B00268DF8 /* IdeasService.swift */,
+				7B49E7371FD2340900268DF8 /* UserNotificationService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +158,17 @@
 					7B49E7111FD22CAC00268DF8 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B49E7181FD22CAC00268DF8 /* ViewController.swift in Sources */,
+				7B49E7321FD2321C00268DF8 /* CloudKitService.swift in Sources */,
+				7B49E7381FD2340900268DF8 /* UserNotificationService.swift in Sources */,
+				7B49E7181FD22CAC00268DF8 /* IdeasVC.swift in Sources */,
+				7B49E7361FD2332B00268DF8 /* IdeasService.swift in Sources */,
 				7B49E7161FD22CAC00268DF8 /* AppDelegate.swift in Sources */,
+				7B49E7301FD231A000268DF8 /* Idea.swift in Sources */,
+				7B49E7341FD232EF00268DF8 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +351,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ideas/Ideas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 999T2QHS45;
 				INFOPLIST_FILE = Ideas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamerongo.Ideas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,9 +368,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ideas/Ideas.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 999T2QHS45;
 				INFOPLIST_FILE = Ideas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreamerongo.Ideas;
 				PRODUCT_NAME = "$(TARGET_NAME)";

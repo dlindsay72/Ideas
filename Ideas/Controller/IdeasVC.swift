@@ -16,6 +16,10 @@ class IdeasVC: UIViewController {
     
     var ideas = [Idea]()
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,6 +73,14 @@ extension IdeasVC: UITableViewDataSource {
         let cell = UITableViewCell()
         let idea = ideas[indexPath.row]
         cell.textLabel?.text = idea.title
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = #colorLiteral(red: 1, green: 0.5943232126, blue: 0.04868936191, alpha: 1)
+        cell.backgroundColor = #colorLiteral(red: 0.3579174876, green: 0.7784708738, blue: 0.997761786, alpha: 0.57)
+        cell.textLabel?.textColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
+        cell.textLabel?.highlightedTextColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        cell.textLabel?.font = UIFont(name: "Noteworthy", size: 30)
+        cell.selectedBackgroundView? = bgColorView
+        
         return cell
     }
 }
